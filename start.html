@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
+    :root {
+        --color-prymary: rgb(31, 49, 184) ;
+        --color-light: #e5e5f0;
+        --color-secondari: black;
+        --color-prymars: rgb(72, 135, 177);
+
+        --color-bg: #ebc5c5;
+
+
+        --transition: 400ms  ease;
+    }
+    body{
+        background:url(./img/Rectangle\ 7.png);
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        text-transform: none;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    *, * ::before, * ::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1{
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: var(--color-secondari);
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--color-secondari);
+        text-transform: capitalize;
+    }
+    h5{
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: var(--color-prymary);
+        text-transform: uppercase;
+    }
+    h4{
+        font-size: 1.4rem;
+        color: black;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--color-prymary);
+    }
+
+    .cardscontainer{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: -14%;
+        margin-left: 10%;
+    }
+
+    .cardswrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 200px;
+        gap: 50px;
+        position: absolute;
+        margin-left: 60px;
+    }
+
+    .cards1{
+        width: 350px;
+        height: 590px;
+        background: url(./img/Rectangle\ 3.png);
+        border-radius: 0.3rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .cards2{
+        width: 350px;
+        height: 590px;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .cards3{
+        width: 350px;
+        height: 590px;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .cards4{
+        width: 350px;
+        height: 590px;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .cards div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: var(--transition);
+    }
+
+    .overlay{
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: scale(0.8);
+        transition: var(--transition);
+        opacity: 0;
+    }
+
+    .cards:hover > .overlay{
+        transform: scale(1);
+        opacity: 1;
+    }
+.ramka-5 {
+    position: relative;
+    z-index: 0;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;     
+}
+.ramka-5::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #BFE2FF;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7), linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7);
+    animation: anim-ramka-5 4s linear infinite;
+}
+.ramka-5::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+@keyframes anim-ramka-5 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+    .loki{
+        background: url(./img/Rectangle\ 3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 96%;
+        height: 98%;
+        
+    }
+
+    .Black_Panther{
+        background: url(./img/Rectangle\ 4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 96%;
+        height: 98%;
+    }
+
+    .Iron_Man{
+        background: url(./img/Rectangle\ 5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 96%;
+        height: 98%;
+    }
+
+    .Captain_America{
+        background: url(./img/Rectangle\ 6.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 95%;
+        height: 98%;
+        margin-top: -7px;
+    }
+
+    .l1{
+        margin-top: 350px;
+        margin-left: 35%;
+    }
+
+    .l2{
+        color: rgba(255, 255, 255, 0.772);
+    }
+
+    .Black{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+        margin-left: 25px;
+    }
+    
+    .b1{
+        color: rgba(255, 255, 255, 0.681);
+    }
+
+    .iron{
+        margin-top: 350px;
+    }
+
+    .iron1{
+        color:rgba(255, 255, 255, 0.737);
+    }
+
+    .c1{
+        margin-top: 300px;
+        margin-left: 15px;
+    }
+
+    .c2{
+        color: rgba(255, 255, 255, 0.767);
+    }
+
+    .a{
+          display: flex;
+          margin-top: 50px;
+          margin-left: 50px;
+    }
+
+    .a1{
+          color: rgb(11, 43, 251);
+          font-size: 30px;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 40px;
+    }
+
+
+</style>
+<body>
+    <div class="a">
+        <a href="/index.html" class="a1">back</a>
+    </div>
+    <section class="cardscontainer container " >
+        <div class="cardswrapper ">
+            <div class="cards1 ramka-5 ">
+                <div class="loki">
+                    <h1 class="l1"><a href="./hero/loki.html" class="l2">loki</a></h1>
+                <div class="overlay"></div>                    
+                </div>
+
+            </div>
+            <div class="cards2 ramka-5">
+                <div class="Black_Panther">
+                    <h1 class="Black"> <a href="./hero/Black_Panther.html" class="b1">Black Panther</a></h1>
+                </div>
+                <div class="overlay1"></div>
+            </div>
+            <div class="cards3 ramka-5">
+                <div class="Iron_Man">
+                    <h1 class="iron"><a href="./hero/Iron_Man.html" class="iron1"> Iron Man</a></h1>
+                </div>
+            <div class="overlay2"></div>
+            </div>
+            <div class="cards4 ramka-5">
+                <div class="Captain_America">
+                    <h1 class="c1"><a href="./hero/Captain_America.html" class="c2"> Captain America</a></h1>
+                </div>
+                <div class="overlay3"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

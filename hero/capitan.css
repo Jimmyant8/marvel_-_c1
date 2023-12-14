@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background: url(./img.hero/Rectangle\ 6.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .Iron{
+    font-size: 150px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -50px;
+  }
+  
+  .q1{
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+  }
+  
+  .a{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .a1{
+    color: white;
+    font-size: 30px;
+    background-color: rgba(207, 49, 49, 0.886);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+  .muvi{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 200px;
+  }
+  
+  .muvi a{
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .Chris{
+    margin-left: 30px;
+    width: 170px;
+    height:  50px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: red;
+    font-weight: bold;
+  }
+  
+  .Chris a{
+    color: black;
+  }
+  
+  
